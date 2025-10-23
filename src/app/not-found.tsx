@@ -11,7 +11,7 @@ export default function NotFound() {
             <div className="sm:ml-6">
               <div className="sm:border-l sm:border-gray-200 sm:pl-6">
                 <h1 className="title sm:text-5xl">
-                  There's nothin <i>bro</i>...
+                  There's nothin here <i>bruh</i>...
                 </h1>
                 <p className="mt-1 text-base text-muted-foreground">
                   Maybe a mistake i made, idk <i>lmao</i> 😂. Just Try Again &gt;ᴗ&lt;!
