@@ -14,7 +14,7 @@ export default function NotFound() {
                   There's nothin here <i>bruh</i>...
                 </h1>
                 <p className="mt-1 text-base text-muted-foreground">
-                  Maybe a mistake i made, idk <i>lmao</i> 😂. Just Try Again &gt;ᴗ&lt;!
+                  Maybe a mistake i made, idk <i>lmao</i> 😂. Try Again <i>lah</i> &gt;ᴗ&lt;!
                 </p>
               </div>
               <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
