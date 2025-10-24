@@ -32,13 +32,13 @@ export default function RootLayout({
       <body
         className={`${bricolage_grotesque.variable} ${patua_One.variable} antialiased`}
       >
-        <Header />
         <div className="mx-auto flex max-w-3xl flex-col px-8">
             <main className="grow">
+              <Header />
               {children}
+              <Footer />
               </main>
           </div>
-        <Footer />
       </body>
     </html>
   );
