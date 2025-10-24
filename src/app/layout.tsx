@@ -1,3 +1,6 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 import type { Metadata } from "next";
 import { Bricolage_Grotesque,  Patua_One} from "next/font/google";
 import "./globals.css";
@@ -29,7 +32,13 @@ export default function RootLayout({
       <body
         className={`${bricolage_grotesque.variable} ${patua_One.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <div className="mx-auto flex max-w-3xl flex-col px-8">
+            <main className="grow">
+              {children}
+              </main>
+          </div>
+        <Footer />
       </body>
     </html>
   );
