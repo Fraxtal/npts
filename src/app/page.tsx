@@ -1,3 +1,4 @@
+import RoundedImage from "@/components/RoundImage";
 import { Button } from "@/components/ui/button";
 import {
   ArrowDown,
@@ -11,14 +12,18 @@ import path from "path";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-        </div>
-      </main>
-    </div>
+    <>
+      <article className="mt-8 flex flex-col gap-16 pb-16">
+        <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
+          <div className="flex max-w-[320px] flex-col sm:max-w-full md:flex-row">
+              <RoundedImage className="md:mr-8" />
+            <h1 className="title text-balance text-4xl sm:text-5xl">
+              Hi, its Nicholas here.
+            </h1>
+          </div>
+        </section>
+
+      </article>
+    </>
   );
 }
