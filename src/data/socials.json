@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/npts/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/Fraxtal",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "",
+      "icon": "mail"
+    }
+  ]
+}

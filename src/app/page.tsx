@@ -9,6 +9,7 @@ import {
 import Link from "next/link";
 import path from "path";
 
+const BIRTH_YEAR = 2005;
 
 export default function Home() {
   return (
@@ -19,9 +20,27 @@ export default function Home() {
             <h1 className="title text-balance text-4xl sm:text-5xl">
               Hi, its Nicholas here.
             </h1>
+            
+            <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
+              {new Date().getFullYear() - BIRTH_YEAR} year old student from Malaysia 🇲🇾
+            </p>
+
+            <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
+              A student looking to indulge themselves in Artificial Intelligence with fullstack on the side.
+            </p>
+
+            <div className="mt-6 flex items-center gap-1">
+              <p className="text-balance text-sm font-semibold sm:text-base">
+                For any enquiries, do contact me with the following links
+              </p>
+              <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
+              <ArrowDown className="block size-5 animate-bounce sm:hidden" />
+            </div>
           </div>
           <RoundedImage className="md:mr-8" />
+          
         </section>
+
 
       </article>
     </>

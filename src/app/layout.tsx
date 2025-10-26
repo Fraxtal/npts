@@ -2,10 +2,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import type { Metadata } from "next";
-import { Bricolage_Grotesque,  Patua_One} from "next/font/google";
+import {  Inter ,  Patua_One} from "next/font/google";
 import "./globals.css";
 
-const bricolage_grotesque = Bricolage_Grotesque({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: ["400", "500", "600", "700"],
@@ -30,15 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bricolage_grotesque.variable} ${patua_One.variable} antialiased`}
+        className={`min-h-screen bg-background font-sans antialiased ${inter.variable} ${patua_One.variable}`}
       >
+        <Header />
         <div className="mx-auto flex max-w-3xl flex-col px-8">
-            <main className="grow">
-              <Header />
-              {children}
-              <Footer />
-              </main>
+            <main className="grow">{children}</main>
           </div>
+        <Footer />
       </body>
     </html>
   );
