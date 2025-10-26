@@ -15,12 +15,12 @@ export default function Home() {
     <>
       <article className="mt-8 flex flex-col gap-16 pb-16">
         <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
-          <div className="flex max-w-[320px] flex-col sm:max-w-full md:flex-row">
-              <RoundedImage className="md:mr-8" />
+          <div className="flex max-w-[320px] flex-col sm:max-w-full">
             <h1 className="title text-balance text-4xl sm:text-5xl">
               Hi, its Nicholas here.
             </h1>
           </div>
+          <RoundedImage className="md:mr-8" />
         </section>
 
       </article>
