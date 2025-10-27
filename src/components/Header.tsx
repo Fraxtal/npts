@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggler";
 
 const navLinks = [
   {
@@ -32,6 +33,7 @@ export default function Header() {
             ))}
           </ul>
           <div className="flex gap-2 sm:gap-4">
+            <ThemeToggle />
           </div>
         </nav>
       </div>

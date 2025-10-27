@@ -1,6 +1,7 @@
 import RoundedImage from "@/components/RoundImage";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
+import Experience from "@/components/Experience";
 import {
   ArrowDown,
   ArrowDownRight,
@@ -29,14 +30,6 @@ export default async function Home() {
             <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
               A student looking to indulge themselves in Artificial Intelligence with fullstack on the side.
             </p>
-
-            <div className="mt-6 flex items-center gap-1">
-              <p className="text-balance text-sm font-semibold sm:text-base">
-                My links
-              </p>
-              <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
-              <ArrowDown className="block size-5 animate-bounce sm:hidden" />
-            </div>
             <div className="mt-5 flex items-center gap-4">
               <Link href="/resume.pdf" target="_blank">
                 <Button variant="outline">
@@ -49,8 +42,8 @@ export default async function Home() {
             
           </div>
           <RoundedImage className="md:mr-8" />
-
         </section>
+        <Experience />
         
 
       </article>

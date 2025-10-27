@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Providers from "@/components/Providers";
 
 import type { Metadata } from "next";
 import {  Inter ,  Patua_One} from "next/font/google";
@@ -31,12 +32,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`min-h-screen bg-background font-sans antialiased ${inter.variable} ${patua_One.variable}`}
-      >
-        <Header />
-        <div className="mx-auto flex max-w-3xl flex-col px-8">
-            <main className="grow">{children}</main>
-          </div>
-        <Footer />
+      > 
+        <Providers>
+          <Header />
+          <div className="mx-auto flex max-w-3xl flex-col px-8">
+              <main className="grow">{children}</main>
+            </div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

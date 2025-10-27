@@ -1,0 +1,24 @@
+{
+  "education": [
+    {
+      "name": "Asia Pacific University of Technology & Innovation",
+      "href": "https://www.apu.edu.my/",
+      "title": "BS in Computer Science (Artificial Intelligence)",
+      "logo": "/apu.jpg",
+      "start": "Jun 2023",
+      "end": "Now",
+      "description": [
+        "Graduated Foundation with Distinction",
+        "Currently majoring in Computer Science specializing in Artificial Intelligence."
+      ]
+    },
+    {
+      "name": "Sekolah Menengah Kebangsaan USJ 12",
+      "href": "https://www.facebook.com/twelveans/",
+      "title": "Sijil Pelajaran Malaysia (SPM)",
+      "logo": "/smkusj12.png",
+      "start": "Feb 2018",
+      "end": "Mac 2023"
+    }
+  ]
+}
