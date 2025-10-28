@@ -1,5 +1,14 @@
 {
   "career": [
-    
+    {
+      "name": "N/A",
+      "href": "/",
+      "title": "Starting Internship Soon",
+      "logo": "/vercel.svg",
+      "start": "None",
+      "description": [
+        "Planning to start internship in April/May 2026"
+      ]
+    }
   ]
 }
