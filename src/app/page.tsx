@@ -1,7 +1,9 @@
 import RoundedImage from "@/components/RoundImage";
 import Socials from "@/components/Socials";
-import { Button } from "@/components/ui/button";
+import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
+import LinkWithIcon from "@/components/LinkWithIcon";
+import { Button } from "@/components/ui/button";
 import {
   ArrowDown,
   ArrowDownLeft,
@@ -12,6 +14,7 @@ import Link from "next/link";
 import path from "path";
 
 const BIRTH_YEAR = 2005;
+const LIMIT = 2; // max show 2
 
 export default async function Home() {
   return (
@@ -61,6 +64,18 @@ export default async function Home() {
         </section>
         <Experience />
         
+        <section className="flex flex-col gap-8">
+          <div className="flex justify-between">
+            <h2 className="title text-2xl sm:text-3xl">Featured Projects</h2>
+            <LinkWithIcon
+              href="/projects"
+              position="right"
+              icon={<ArrowRightIcon className="size-5" />}
+              text="view more"
+            />
+          </div>
+          <Projects limit={LIMIT} />
+        </section>
 
       </article>
     </>

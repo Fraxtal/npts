@@ -1,0 +1,21 @@
+{
+  "projects": [
+    {
+      "name": "npts",
+      "description": "Portfolio website for me, myself and I.",
+      "image": "/npts.png",
+      "tags": [
+        "NextJS",
+        "TypeScript",
+        "TailwindCSS"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Fraxtal/npts",
+          "icon": "github"
+        }
+      ]
+    }
+  ]
+}
