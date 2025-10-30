@@ -1,8 +1,10 @@
 import RoundedImage from "@/components/RoundImage";
 import Socials from "@/components/Socials";
 import Projects from "@/components/Projects";
+import Posts from "@/components/Posts";
 import Experience from "@/components/Experience";
 import LinkWithIcon from "@/components/LinkWithIcon";
+import { getPosts } from "@/lib/posts";
 import { Button } from "@/components/ui/button";
 import {
   ArrowDown,
@@ -13,10 +15,13 @@ import {
 import Link from "next/link";
 import path from "path";
 
+const blogDirectory = path.join(process.cwd(), "content");
 const BIRTH_YEAR = 2005;
 const LIMIT = 2; // max show 2
 
 export default async function Home() {
+  const posts = await getPosts(blogDirectory, LIMIT);
+
   return (
     <>
       <article className="mt-8 flex flex-col gap-16 pb-16">
@@ -75,6 +80,19 @@ export default async function Home() {
             />
           </div>
           <Projects limit={LIMIT} />
+        </section>
+
+        <section className="flex flex-col gap-8">
+          <div className="flex justify-between">
+            <h2 className="title text-3xl">Recent Posts</h2>
+            <LinkWithIcon
+              href="/blog"
+              position="right"
+              icon={<ArrowRightIcon className="size-5" />}
+              text="view more"
+            />
+          </div>
+          <Posts posts={posts} />
         </section>
 
       </article>
