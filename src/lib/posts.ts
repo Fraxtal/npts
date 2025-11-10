@@ -52,7 +52,7 @@ export async function getPosts(
     const posts = files
       .filter((file) => file.endsWith(".mdx")) // Filter out .DS_Store and other files
       .map((file) => getPostMetaData(rootDirectory, file))
-      .filter((post): post is PostMetadata => post !== null) // Filter out failed reads
+      .filter((post): post is PostMetadata => post !== null && post.slug) // Filter out failed reads and posts without slugs
       .sort((a, b) => {
         const dateA =
           new Date(a.updatedAt ?? a.publishedAt ?? "").getTime() || 0;
@@ -78,6 +78,13 @@ export function getPostMetaData(
 ): PostMetadata | null {
   try {
     const slug = filePath.replace(/\.mdx$/, "");
+    
+    // Validate slug
+    if (!slug || slug.trim() === "") {
+      console.error(`Invalid slug generated from file: ${filePath}`);
+      return null;
+    }
+    
     const fullFilePath = path.join(rootDirectory, filePath);
     const fileContent = fs.readFileSync(fullFilePath, { encoding: "utf8" });
     const { data, content } = matter(fileContent);
