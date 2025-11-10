@@ -1,7 +1,11 @@
+import Projects from "@/components/Projects";
 
+export default async function Project() {
+  return (
+    <article className="mt-8 flex flex-col gap-8 pb-16">
+      <h1 className="title">My Projects</h1>
 
-export default function Projects(){
-    return(
-        <h1>Projects</h1>
-    );
+      <Projects />
+    </article>
+  );
 }

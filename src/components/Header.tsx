@@ -13,11 +13,7 @@ const navLinks = [
   {
     name: "Blog",
     href: "/blog",
-  },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
+  }
 ];
 
 export default function Header() {

@@ -31,8 +31,7 @@ export default function RootLayout({
   return (
     <html 
       lang="en"
-      className="light"
-      style={{colorScheme:"light"}}
+      suppressHydrationWarning 
     >
       <body
         className={`min-h-screen bg-background font-sans antialiased ${inter.variable} ${patua_One.variable}`}
