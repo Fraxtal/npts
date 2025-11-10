@@ -52,7 +52,7 @@ export async function getPosts(
     const posts = files
       .filter((file) => file.endsWith(".mdx")) // Filter out .DS_Store and other files
       .map((file) => getPostMetaData(rootDirectory, file))
-      .filter((post): post is PostMetadata => post !== null && post.slug) // Filter out failed reads and posts without slugs
+      .filter((post): post is PostMetadata => post !== null) // Filter out failed reads
       .sort((a, b) => {
         const dateA =
           new Date(a.updatedAt ?? a.publishedAt ?? "").getTime() || 0;
