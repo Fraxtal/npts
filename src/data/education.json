@@ -4,7 +4,7 @@
       "name": "Asia Pacific University of Technology & Innovation",
       "href": "https://www.apu.edu.my/",
       "title": "BS in Computer Science (Artificial Intelligence)",
-      "logo": "/apu.jpg",
+      "logo": "${basepath}/apu.jpg",
       "start": "Jun 2023",
       "description": [
         "Graduated Foundation with Distinction",
@@ -15,7 +15,7 @@
       "name": "Sekolah Menengah Kebangsaan USJ 12",
       "href": "https://www.facebook.com/twelveans/",
       "title": "Sijil Pelajaran Malaysia (SPM)",
-      "logo": "/smkusj12.png",
+      "logo": "${basepath}/smkusj12.png",
       "start": "Feb 2018",
       "end": "Mac 2023"
     }

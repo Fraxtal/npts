@@ -10,7 +10,7 @@ const RoundedImage = ({className}: RoundedImageProps) => {
     return (
     <>
       <Image
-        src="/pfp.jpg"
+        src="${basepath}/pfp.jpg"
         height={140}
         width={140}
         alt="Profile Picture"
