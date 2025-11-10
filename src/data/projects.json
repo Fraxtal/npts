@@ -3,7 +3,7 @@
     {
       "name": "npts",
       "description": "Portfolio website for me, myself and I.",
-      "image": "${basepath}/npts.png",
+      "image": "npts.png",
       "tags": [
         "NextJS",
         "TypeScript",
