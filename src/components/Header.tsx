@@ -4,15 +4,15 @@ import ThemeToggle from "./ThemeToggler";
 const navLinks = [
   {
     name: "Home",
-    href: "/",
+    href: "${basepath}/",
   },
   {
     name: "Projects",
-    href: "/projects",
+    href: "${basepath}/projects",
   },
   {
     name: "Blog",
-    href: "/blog",
+    href: "${basepath}/blog",
   }
 ];
 
