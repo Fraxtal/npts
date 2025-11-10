@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Personal Portfolio
+
+A clean, minimal portfolio website built with Next.js, Tailwind CSS and Shadcn UI. Featuring a simple blog design.
+
+
+## Live Demo
+
+🌐 Check it out here: **[asd](asd)**
+
+![Portfolio Screenshot](public/npts.png)
+
+## Features
+
+- Minimal design with Shadcn UI
+- Light/dark mode toggle
+- Responsive mobile design
+- Blog section
+
+## Tech Stack
+
+- Next.js
+- Tailwind CSS
+- Shadcn UI
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+git clone https://github.com/Fraxtal/npts npts
+cd npts
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Update personal info in `src/data/*.json`
+- Replace projects in `src/data/projects.json`
+- Replace blog posts in `content/` or remove it.
+- Add your resume to `public/resume.pdf`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+Deploy to Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+1. Push to GitHub
+2. Connect repo to Vercel
+3. Add environment variables
+4. Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+_This project is highly inspired/based on the design of [Ted](https://github.com/tedawf)._
