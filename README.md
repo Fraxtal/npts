@@ -5,7 +5,7 @@ A clean, minimal portfolio website built with Next.js, Tailwind CSS and Shadcn U
 
 ## Live Demo
 
-🌐 Check it out here: **[https:fraxtal.github.io/npts](https:fraxtal.github.io/npts)**
+🌐 Check it out here: **[https://fraxtal.github.io/npts](https://fraxtal.github.io/npts)**
 
 ![Portfolio Screenshot](public/npts.png)
 
