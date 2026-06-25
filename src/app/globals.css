@@ -116,8 +116,16 @@
   * {
     @apply border-border;
   }
+  html {
+    cursor: url('/cursor.png') 1 1, default;
+    /* Custom cursor for links and buttons */
+
+  }
   body {
     @apply bg-background text-foreground;
+  }
+  a, button, .interactive-element {
+      cursor: url('/cursorselect.png'), pointer;
   }
   .title {
     @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
