@@ -1,7 +1,8 @@
 import type { IconBaseProps, IconType } from "react-icons";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGlobe, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const iconMap = {
+  globe: FaGlobe,
   github: FaGithub,
   linkedin: FaLinkedin,
   mail: FaEnvelope,

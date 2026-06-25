@@ -28,6 +28,11 @@
       ],
       "links": [
         {
+          "name": "Website",
+          "href": "https://datingwithu.netlify.app",
+          "icon": "globe"
+        },
+        {
           "name": "Source",
           "href": "https://github.com/Fraxtal/DatingWithYou",
           "icon": "github"
