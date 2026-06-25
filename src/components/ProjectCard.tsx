@@ -18,12 +18,14 @@ interface Props {
 
 export function ProjectCard({ project }: Props) {
   const { name, href, description, image, tags, links } = project;
+  const githubLink = links.find((l) => l.icon === "github");
+  const imageHref = githubLink?.href ?? href ?? image ?? "#";
 
   return (
     <Card className="flex flex-col">
       <CardHeader>
         {image && (
-          <Link href={href || image}>
+          <Link href={imageHref} target="_blank">
             <Image
               src={image}
               alt={name}
