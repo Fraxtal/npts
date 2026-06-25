@@ -16,6 +16,23 @@
           "icon": "github"
         }
       ]
+    },
+    {
+      "name": "Dating With You",
+      "description": "Random funny application to ask someone out on a date.",
+      "image": "/dwu.png",
+      "tags": [
+        "React",
+        "TypeScript",
+        "TailwindCSS"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Fraxtal/DatingWithYou",
+          "icon": "github"
+        }
+      ]
     }
   ]
 }
